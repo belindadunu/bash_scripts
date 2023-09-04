@@ -17,10 +17,14 @@ Date: August 30, 2023
 
 `$ sudo apt list --upgradable` 
 
-`$ upgrades=$apt(list --upgradeable)` 
+`$ upgrades=$(apt list --upgradeable)` 
 
 **_Create a dated log file and output the number of upgradable packages_**
 
 `$ echo "$upgrades packages can be upgraded" > update$(date +%m.%d.%y).txt`
 
 **_Edit the crontab config_** 
+
+`$ crontab -e`
+
+**_Schedule script to run weekly on Fridays at 11pm_**
