@@ -28,3 +28,5 @@ Date: August 30, 2023
 `$ crontab -e`
 
 **_Schedule script to run weekly on Fridays at 11pm_**
+
+`$ 0 23 * * 5 /usr/local/bin/script.sh`
