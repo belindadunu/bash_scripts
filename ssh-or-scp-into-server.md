@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # User selects ssh or scp
 echo "1) ssh"
