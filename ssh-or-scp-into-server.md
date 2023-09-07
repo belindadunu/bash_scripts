@@ -35,7 +35,7 @@ case "$choice" in
           # or local to remote
           if [ "$opt" == 1 ]; then
             scp "$remoteuser@$remoteip":"$src" "$dest"
-          elif [ "$opt" = 2 ]; then
+          elif [ "$opt" == 2 ]; then
             scp "$src" "$remoteuser@$remoteip":"$dest"
           else
             echo "Try again"
