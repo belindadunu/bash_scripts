@@ -14,6 +14,8 @@ while true; do
   echo "9) Memory information"
   echo "10) File system information"
   echo "11) Currently running process"
+
+  # Ask user what they'd like to look into
   
   echo "What would you like to check today?"
   read -p "Enter your choice (1-11): " choice
