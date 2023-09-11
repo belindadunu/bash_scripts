@@ -1,32 +1,32 @@
 # bash-script-weekly-server-maintenance
 
-Purpose: This script is to run as a cronjob every Friday at 11pm to update the server and log the output.
+# Purpose: This script is to run as a cronjob every Friday at 11pm to update the server and log the output.
 
-By: Belinda Dunu
+# By: Belinda Dunu
 
-Date: August 30, 2023
+# Date: August 30, 2023
 
 
-**#!/bin/bash**
+#!/bin/bash
 
-**_Update the server packages_**  
+# Update the server packages  
 
-`$ sudo apt update` 
+sudo apt update
 
-**_Get the number of packages that can be upgraded_** 
+# Get the number of packages that can be upgraded
 
-`$ sudo apt list --upgradable` 
+sudo apt list --upgradable
 
-`$ upgrades=$(apt list --upgradeable)` 
+upgrades=$(apt list --upgradeable)
 
-**_Create a dated log file and output the number of upgradable packages_**
+# Create a dated log file and output the number of upgradable packages
 
-`$ echo "$upgrades packages can be upgraded" > update$(date +%m.%d.%y).txt`
+echo "$upgrades packages can be upgraded" > update$(date +%m.%d.%y).txt
 
-**_Edit the crontab config_** 
+# Edit the crontab config
 
-`$ crontab -e`
+crontab -e
 
-**_Schedule script to run weekly on Fridays at 11pm_**
+# Schedule script to run weekly on Fridays at 11pm
 
-`$ 0 23 * * 5 /usr/local/bin/script.sh`
+0 23 * * 5 /usr/local/bin/script.sh
