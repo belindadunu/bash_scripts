@@ -8,7 +8,7 @@ while true; do
   echo "3) Home Directory"
   echo "4) OS name & version"
   echo "5) Current working directory"
-    echo "6) Number of users logged in"
+  echo "6) Number of users logged in"
   echo "7) Hard disk information"
   echo "8) CPU information"
   echo "9) Memory information"
